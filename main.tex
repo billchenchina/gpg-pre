@@ -16,8 +16,15 @@
 {
 	\begin{frame}
 		\frametitle{Table of Contents}
-		\tableofcontents[currentsection]
+		\tableofcontents[currentsection,subsubsectionstyle=show/show/show/shaded]
 	\end{frame}
+}
+\AtBeginSubsection[] % Do nothing for \subsection*
+{
+    \begin{frame}
+    \frametitle{Table of Contents}
+    \tableofcontents[currentsection,currentsubsection,subsubsectionstyle=show/show/shaded/shaded]
+    \end{frame}
 }
 
 
